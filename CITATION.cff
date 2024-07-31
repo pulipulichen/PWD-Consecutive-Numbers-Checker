@@ -9,3 +9,6 @@ title: "PWD-Consecutive-Numbers-Checker"
 license: "MIT"
 repository-code: "https://github.com/pulipulichen/PWD-Consecutive-Numbers-Checker"
 abstract: "Parse YouTube ID from source code."
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.13145107

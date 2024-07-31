@@ -1,4 +1,4 @@
-@TODO
+[![DOI](https://zenodo.org/badge/836239502.svg)](https://zenodo.org/doi/10.5281/zenodo.13145107)
 
 # PWD-Consecutive-Numbers-Checker: 檢查多個號碼是否連續的工具。
 
