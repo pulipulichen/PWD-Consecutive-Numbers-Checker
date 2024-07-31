@@ -4,6 +4,7 @@ let config = {
   version: '20240731-2126',
 
   view: 'main',
+  allIDList: [],
   // resetLocalConfigHour: 0.5,
 }
 

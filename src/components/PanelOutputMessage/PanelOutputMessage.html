@@ -1,3 +1,9 @@
-<div class="ComponentTemplate">
-  Hello World
+<div class="PanelOutputMessage">
+  <label id="message" class="ui large header">
+    {{ $t('Lost ID List') }}
+    <span v-if="message.length > 0">
+      ({{ message.length }})
+    </span>
+  </label>
+  <textarea id="message" v-model="message.join('\n')"></textarea>
 </div>

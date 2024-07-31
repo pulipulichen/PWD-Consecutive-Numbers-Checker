@@ -1,3 +1,7 @@
-<div class="ComponentTemplate">
-  Hello World
+<div class="PanelInputID">
+  <label id="InputID" class="ui large header">
+    {{ $t('ID List')}} 
+    (<a href="https://gdoc.pub/doc/e/2PACX-1vRyHuAWk20v-ptYXMrm6Zd-buBccZfpfCVbMXCkimn3h_UJF6nH1bkfjqUHE_AResIWdgwkMPKh3uYw" target="_blank">{{ $t('How to list file names?') }}</a>)
+  </label>
+  <textarea id="InputID" v-model="db.localConfig.idList"></textarea>
 </div>

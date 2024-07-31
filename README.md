@@ -6,6 +6,12 @@
 
 This tool allows users to input multiple ID numbers. The program will determine if these ID numbers are consecutive and mark the consecutive ranges. The input data are multiple ID numbers, and the output data are the judgment results and consecutive ranges.
 
+![](https://blogger.googleusercontent.com/img/a/AVvXsEjC6uQ7G26GaSdR-WB0-6FEIGPn0HDkPZOuSn9PFoZYKyogeArGdPUCYCoo0xOG7INlWNRHp0hRXDWq63YUx2ZHfpaJAGfmLoeklUvNIKADoHecOznM2_J1f0EQLmBi5pBsqhply5vzaIos-BbSsunShAlwBr_FcfQFUYleECWgJTl11Ee1KT5scw)
+
+# Online Tool
+
+https://pulipulichen.github.io/PWD-Consecutive-Numbers-Checker/
+
 # Key Techniques
 
 - **Progressive Web App (PWA)**: 可安裝在電腦或手機上的網頁架構設計。
