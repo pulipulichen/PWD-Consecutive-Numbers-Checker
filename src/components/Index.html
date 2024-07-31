@@ -1,0 +1,33 @@
+<div class="Index"
+  v-show="db.config.inited">
+
+  <PanelTitle 
+    ref="PanelTitle"
+    :db="db">
+  </PanelTitle>
+  
+  <div class="ui form">
+    <PanelInputRules 
+      ref="PanelInputRules"
+      :db="db">
+    </PanelInputRules>
+
+    <div class="ui grid">
+      <div class="equal width row">
+        <div class="column">
+          <PanelInputID 
+            ref="PanelInputID"
+            :db="db">
+          </PanelInputID>
+        </div>
+        <div class="column">
+          <PanelOutputMessage 
+            ref="PanelOutputMessage"
+            :db="db">
+          </PanelOutputMessage>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+</div>
