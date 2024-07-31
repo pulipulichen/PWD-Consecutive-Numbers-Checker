@@ -6,7 +6,7 @@
 
 This tool allows users to input multiple ID numbers. The program will determine if these ID numbers are consecutive and mark the consecutive ranges. The input data are multiple ID numbers, and the output data are the judgment results and consecutive ranges.
 
-![](https://blogger.googleusercontent.com/img/a/AVvXsEjC6uQ7G26GaSdR-WB0-6FEIGPn0HDkPZOuSn9PFoZYKyogeArGdPUCYCoo0xOG7INlWNRHp0hRXDWq63YUx2ZHfpaJAGfmLoeklUvNIKADoHecOznM2_J1f0EQLmBi5pBsqhply5vzaIos-BbSsunShAlwBr_FcfQFUYleECWgJTl11Ee1KT5scw)
+![](https://blogger.googleusercontent.com/img/a/AVvXsEgP8Qr24oBChqY8nBXa1jTRdEAOqA17POdsQfbQK_w14fZwKNeG9UE5JSVY_O5cHGOqlLdm9Iw4UtwF9IQLNeiNnNc7_VAtWSo8QDBZaI-lbw7u1EbvBM47oAQ6OTMKnxB2C7RzttuE0WrXzpEfB4RvG6iIVEPhDRWkojVallOEihMlTv1lmtEOmg)
 
 # Online Tool
 
@@ -22,4 +22,4 @@ https://pulipulichen.github.io/PWD-Consecutive-Numbers-Checker/
 
 # Citation
 
-@TODO
+Chen, Y.-T. (2024). *PWD-Consecutive-Numbers-Checker* (20240801.002924) [Computer software]. Zenodo. [https://doi.org/10.5281/ZENODO.13145107](https://doi.org/10.5281/ZENODO.13145107)
