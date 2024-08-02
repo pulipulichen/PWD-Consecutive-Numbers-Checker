@@ -1,9 +1,9 @@
 <div class="PanelOutputMessage">
   <label id="message" class="ui large header">
     {{ $t('Lost ID List') }}
-    <span v-if="message.length > 0">
-      ({{ message.length }})
+    <span v-if="messageCount > 0">
+      ({{ messageCount }})
     </span>
   </label>
-  <textarea id="message" v-model="message.join('\n')"></textarea>
+  <textarea id="message" v-model="message"></textarea>
 </div>

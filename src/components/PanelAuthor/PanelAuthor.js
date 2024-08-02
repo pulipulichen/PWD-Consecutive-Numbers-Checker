@@ -1,3 +1,4 @@
+
 let app = {
   props: ['db'],
   components: {
@@ -20,12 +21,10 @@ let app = {
     
   },
   methods: {
-    sortIdList () {
-      this.$parent.sortIdList()
-    },
-    copy () {
-      this.db.utils.ClipboardUtils.copyPlainString(this.db.localConfig.idList)
-    }  
+    resetLocalConfig () {
+      // console.log(this.$parent)
+      this.$parent.resetLocalConfig()
+    }
   }
 }
 

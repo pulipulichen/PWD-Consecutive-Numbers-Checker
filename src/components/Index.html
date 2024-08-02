@@ -7,10 +7,10 @@
   </PanelTitle>
   
   <div class="ui form">
-    <PanelInputRules 
-      ref="PanelInputRules"
+    <PanelInputRanges 
+      ref="PanelInputRanges"
       :db="db">
-    </PanelInputRules>
+    </PanelInputRanges>
 
     <div class="ui grid">
       <div class="equal width row">
@@ -29,5 +29,10 @@
       </div>
     </div>
   </div>
-    
+
+  <PanelAuthor 
+    ref="PanelAuthor"
+    :db="db">
+  </PanelAuthor>
+  
 </div>

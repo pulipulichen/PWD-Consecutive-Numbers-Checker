@@ -9,8 +9,9 @@ let Index = {
     // WebcamVideo: () => import(/* webpackChunkName: "components/WebcamVideo" */ './WebcamVideo/WebcamVideo.vue'),
     // VotePanel: () => import(/* webpackChunkName: "components/VotePanel" */ './VotePanel/VotePanel.vue'),
     PanelTitle: () => import(/* webpackChunkName: "components/PanelTitle" */ './PanelTitle/PanelTitle.vue'),
+    PanelAuthor: () => import(/* webpackChunkName: "components/PanelAuthor" */ './PanelAuthor/PanelAuthor.vue'),
     PanelInputID: () => import(/* webpackChunkName: "components/PanelInputID" */ './PanelInputID/PanelInputID.vue'),
-    PanelInputRules: () => import(/* webpackChunkName: "components/PanelInputRules" */ './PanelInputRules/PanelInputRules.vue'),
+    PanelInputRanges: () => import(/* webpackChunkName: "components/PanelInputRanges" */ './PanelInputRanges/PanelInputRanges.vue'),
     PanelOutputMessage: () => import(/* webpackChunkName: "components/PanelOutputMessage" */ './PanelOutputMessage/PanelOutputMessage.vue'),
   },
   data() {
@@ -102,8 +103,22 @@ let Index = {
     //     }
     //   }
     // }
-    
+    resetLocalConfig () {
+      if (!window.confirm('Are you sure you want to reset?')) {
+        return false
+      }
+
+      for (let key in this.db.defaultLocalConfig) {
+        this.db.localConfig[key] = this.db.defaultLocalConfig[key]
+      }
+    }
   }
 }
+
+import IndexComputed from './IndexComputed.js'
+IndexComputed(Index)
+
+import IndexMethods from './IndexMethods.js'
+IndexMethods(Index)
 
 export default Index

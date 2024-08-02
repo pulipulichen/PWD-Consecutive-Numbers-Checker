@@ -1,0 +1,16 @@
+<div class="PanelInputRules">
+  <label id="ranges" class="ui large header">
+    {{ $t('Ranges')}}
+  </label>
+  <div class="ui top attached buttons">
+    <button type="button" @click="sortRanges" class="ui button">
+      <i class="sort numeric down icon"></i>
+      {{ $t('Sort') }}
+    </button>
+    <button type="button" @click="copy" class="ui button">
+      <i class="copy icon"></i>
+      {{ $t('Copy') }}
+    </button>
+  </div>
+  <textarea id="ranges" v-model="db.localConfig.ranges"></textarea>
+</div>
