@@ -1,17 +1,21 @@
 <div class="PanelInputID">
   <label id="InputID" class="ui large header">
-    {{ $t('ID List')}} 
+    {{ $t('2. ID List')}} 
   </label>
 
   <div class="ui top attached buttons">
     <a href="https://gdoc.pub/doc/e/2PACX-1vRyHuAWk20v-ptYXMrm6Zd-buBccZfpfCVbMXCkimn3h_UJF6nH1bkfjqUHE_AResIWdgwkMPKh3uYw" target="_blank"
       class="ui button">
       <i class="question circle icon"></i>
-      {{ $t('How to list file names?') }}
+      {{ $t('List Files') }}
     </a>
     <button type="button" @click="sortIdList" class="ui button">
       <i class="sort numeric down icon"></i>
       {{ $t('Sort') }}
+    </button>
+    <button type="button" @click="convertToRanges" class="ui button">
+      <i class="calculator icon"></i>
+      {{ $t('To Ranges') }}
     </button>
     <button type="button" @click="copy" class="ui button">
       <i class="copy icon"></i>

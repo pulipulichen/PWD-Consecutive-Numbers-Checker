@@ -6,7 +6,7 @@
 
 This tool allows users to input multiple ID numbers. The program will determine if these ID numbers are consecutive and mark the consecutive ranges. The input data are multiple ID numbers, and the output data are the judgment results and consecutive ranges.
 
-![](https://blogger.googleusercontent.com/img/a/AVvXsEj6lzz8AU3TD9GffDrYmpYEmvItQ-BSfh3kbIZQFIUXS33ADz7ibvga4PT9XhnXO0V8M0imAbVXFEDIfxu-18gEbvttgXij0IYc4bht7glWOdwGD739PfCifznTNWnjdSxiRlP51du8NEC2hPTLezMP37HLJbfXHMq0lUGOsNPZt0xdthh3DaE6Xw)
+![](https://blogger.googleusercontent.com/img/a/AVvXsEjQr6gmlNuTMs23ThI7qSPVx_-cMRIGviZU2Jd9B3FrbIBfHbJb89fF2VIMvAHeBCaL-kBeEwEmzwW6VoqEZ7vmJMPKXT4D3mBBBe5Losz9IvHRSDePfqYjV_SKc0lsopNkptqgjXT5sDz4zbjea-obaeEmzAkIZISR53JpzSVlWS_q-8i-9Vwj9A)
 
 # Online Tool
 

@@ -48,6 +48,9 @@ let app = {
     
   },
   methods: {
+    copy () {
+      this.db.utils.ClipboardUtils.copyPlainString(this.message)
+    }  
   }
 }
 
