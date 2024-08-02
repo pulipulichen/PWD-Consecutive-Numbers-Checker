@@ -6,7 +6,8 @@ let app = {
   data () {    
     this.$i18n.locale = this.db.localConfig.locale
     return {
-      messageCount: 0
+      messageCount: 0,
+      messageText: ``
     }
   },
   watch: {
@@ -15,7 +16,10 @@ let app = {
     },
   },
   computed: {
-    message () {
+    message: async function () {
+      this.messageText = ``
+
+      await this.db.utils.AsyncUtils.sleep(0)
       let allIDList = this.allIDList
       let idList = this.idList
 
@@ -30,9 +34,18 @@ let app = {
           this.messageCount = this.messageCount + suboutput.length
           output.push(suboutput)
         }
+
+        if (i > 0 && i % 50 === 0) {
+          await this.db.utils.AsyncUtils.sleep(0)
+        }
       }
 
-      return output.map(item => item.join('\n')).join('\n\n')
+      let messageText = output.map(item => item.join('\n')).join('\n\n')
+      if (messageText === '') {
+        messageText = this.$t('No lost id.')
+      }
+      this.messageText = messageText
+      return messageText
     },
     idList () {
       return this.$parent.idList
