@@ -12,5 +12,5 @@
       {{ $t('Copy') }}
     </button>
   </div>
-  <textarea id="ranges" v-model="db.localConfig.ranges"></textarea>
+  <textarea id="ranges" v-model="db.localConfig.ranges" debounce="500" lazy></textarea>
 </div>

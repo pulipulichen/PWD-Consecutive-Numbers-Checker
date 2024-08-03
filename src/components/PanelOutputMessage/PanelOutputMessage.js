@@ -14,9 +14,37 @@ let app = {
     'db.localConfig.locale'() {
       this.$i18n.locale = this.db.localConfig.locale;
     },
+    'allIDList' () {
+      this.setMessage()
+    },
+    'idList' () {
+      this.setMessage()
+    },
+    'db.config.inited': async function () {
+      await this.db.utils.AsyncUtils.sleep()
+      this.setMessage()
+    }
   },
   computed: {
-    message: async function () {
+    
+    idList () {
+      return this.$parent.idList
+    },
+    ruleAry () {
+      return this.$parent.ruleAry
+    },
+    allIDList () {
+      return this.$parent.allIDList
+    }
+  },
+  mounted() {
+    
+  },
+  methods: {
+    copy () {
+      this.db.utils.ClipboardUtils.copyPlainString(this.message)
+    },
+    setMessage: async function () {
       this.messageText = ``
 
       await this.db.utils.AsyncUtils.sleep(0)
@@ -47,23 +75,6 @@ let app = {
       this.messageText = messageText
       return messageText
     },
-    idList () {
-      return this.$parent.idList
-    },
-    ruleAry () {
-      return this.$parent.ruleAry
-    },
-    allIDList () {
-      return this.$parent.allIDList
-    }
-  },
-  mounted() {
-    
-  },
-  methods: {
-    copy () {
-      this.db.utils.ClipboardUtils.copyPlainString(this.message)
-    }  
   }
 }
 
