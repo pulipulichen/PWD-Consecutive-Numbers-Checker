@@ -14,28 +14,28 @@ let app = {
     'db.localConfig.locale'() {
       this.$i18n.locale = this.db.localConfig.locale;
     },
-    'allIDList' () {
-      this.setMessage()
-    },
-    'idList' () {
-      this.setMessage()
-    },
-    'db.config.inited': async function () {
-      await this.db.utils.AsyncUtils.sleep()
-      this.setMessage()
-    }
+    // 'allIDList' () {
+    //   this.setMessage()
+    // },
+    // 'idList' () {
+    //   this.setMessage()
+    // },
+    // 'db.config.inited': async function () {
+    //   await this.db.utils.AsyncUtils.sleep()
+    //   this.setMessage()
+    // }
   },
   computed: {
     
-    idList () {
-      return this.$parent.idList
-    },
-    ruleAry () {
-      return this.$parent.ruleAry
-    },
-    allIDList () {
-      return this.$parent.allIDList
-    }
+    // idList () {
+    //   return this.$parent.idList
+    // },
+    // ruleAry () {
+    //   return this.$parent.ruleAry
+    // },
+    // allIDList () {
+    //   return this.$parent.allIDList
+    // }
   },
   mounted() {
     
@@ -47,9 +47,9 @@ let app = {
     setMessage: async function () {
       this.messageText = ``
 
-      await this.db.utils.AsyncUtils.sleep(0)
-      let allIDList = this.allIDList
-      let idList = this.idList
+      await this.db.utils.AsyncUtils.sleep(0) 
+      let allIDList = this.$parent.allIDList()
+      let idList = this.$parent.idList()
 
       let output = []
       this.messageCount = 0
@@ -63,8 +63,8 @@ let app = {
           output.push(suboutput)
         }
 
-        if (i > 0 && i % 50 === 0) {
-          await this.db.utils.AsyncUtils.sleep(0)
+        if (i > 0 && i % 10 === 0) {
+          await this.db.utils.AsyncUtils.sleep(10)
         }
       }
 

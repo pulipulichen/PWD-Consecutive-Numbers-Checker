@@ -1,5 +1,5 @@
 function IndexComputed (app) {
-  app.computed.ruleAry = function () {
+  app.methods.ruleAry = function () {
     let ranges = this.db.localConfig.ranges
 
     let output = []
@@ -29,14 +29,14 @@ function IndexComputed (app) {
     return output
   }
 
-  app.computed.allIDList = function () {
-    let input = this.ruleAry
+  app.methods.allIDList = function () {
+    let input = this.ruleAry()
     let output = this.generateSequence(input)
     // console.log(output)
     return output
   }
 
-  app.computed.idList = function () {
+  app.methods.idList = function () {
     let idListText = this.db.localConfig.idList
 
     return idListText.trim().split('\n').map(item => {

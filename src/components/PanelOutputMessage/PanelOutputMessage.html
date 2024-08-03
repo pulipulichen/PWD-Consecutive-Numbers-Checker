@@ -6,6 +6,10 @@
     </span>
   </label>
   <div class="ui top attached buttons">
+    <button type="button" @click="setMessage" class="ui positive button">
+      <i class="calculator icon"></i>
+      {{ $t('Analyze') }}
+    </button>
     <button type="button" @click="copy" class="ui button">
       <i class="copy icon"></i>
       {{ $t('Copy') }}

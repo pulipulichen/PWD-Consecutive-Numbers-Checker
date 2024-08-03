@@ -77,10 +77,21 @@ let IndexMethods = function (app) {
 
   app.methods.generateSequence = function(input) {
     let result = [];
-  
+    let count = 0
+    let show_warning = false
+
     // 遍歷每個區間
     for (let range of input) {
       const [start, end] = range;
+      count = count + (end - start + 1)
+      if (count > 10000) { 
+        if (show_warning === false) {
+          window.alert(this.$t('Ranges are too wide.'))
+          show_warning = true
+        }
+        continue
+      }
+
       let subresult = []
       // 產生該區間的所有數字
       for (let i = start; i <= end; i++) {
